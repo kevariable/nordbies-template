@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <header class="navbar navbar-expand-sm navbar-light border-bottom bg-light">
+      <a
+        class="navbar-brand mx-auto text-center text-sm-left"
+        href="#"
+        id="nav-flex"
+        >Dashboard</a
+      >
+
+      <div class="navbar-collapse" id="navDashboard">
+        <ul class="navbar-nav mr-auto w-auto mx-auto text-center">
+          <li class="nav-item dropdown mx-auto">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="fa fa-user-secret mr-1"></i>
+              Admin
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-lock mr-1"></i>
+              Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="d-flex flex-column flex-sm-row bd-highlight">
+      <!-- Sidebar -->
+      <div
+        id="sidebar"
+        class="relative left-0 p-0 m-0 mx-0 bd-highlight navbar navbar-light text-right"
+      >
+        <div class="p-3 mb-2 border-bottom w-100 text-left sidemain">
+          <i class="fa fa-wrench"></i>
+          Tools
+        </div>
+
+        <!-- Settings -->
+        <button
+          class="settings-btn w-100 m-0 text-left navbar-toggler border-0 text-dark tools-btn"
+          type="button"
+          data-toggle="collapse"
+          data-target="#settingsNavigation"
+          aria-controls="settingsNavigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="settings-span">Setting</span>
+          <i class="settings-i fa fa-caret-right"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="settingsNavigation">
+          <ul class="navbar-nav mr-auto text-left px-4">
+            <li class="nav-item">
+              <div class="nav-link">
+                <i class="fa fa-home"></i>
+                <span>Home</span>
+              </div>
+              <div class="nav-link">
+                <i class="fa fa-envelope"></i>
+                <span>Massage</span>
+              </div>
+              <div class="nav-link">
+                <i class="fa fa-cog"></i>
+                <span>Option</span>
+              </div>
+              <div class="nav-link">
+                <i class="fa fa-comment"></i>
+                <span>Shoutbox</span>
+              </div>
+              <div class="nav-link">
+                <i class="fa fa-user"></i>
+                <span>Staff List</span>
+              </div>
+              <div class="nav-link">
+                <i class="fa fa-flag"></i>
+                <span>Transaction</span>
+              </div>
+              <div class="nav-link">
+                <i class="fa fa-exclamation-circle"></i>
+                <span>Rules</span>
+              </div>
+              <div class="nav-link">
+                <i class="fa fa-power-off"></i>
+                <span>Logout</span>
+              </div>
+              <div class="nav-link">
+                <button
+                  class="report-btn w-100 m-0 text-left navbar-toggler border-0 text-dark"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#reportNavigation"
+                  aria-controls="reportNavigation"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="report-span">Report</span>
+                  <i class="report-i fa fa-caret-right"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="reportNavigation">
+                  <ul class="navbar-nav mr-auto text-left px-4">
+                    <li class="nav-item">
+                      <div class="nav-link">
+                        <i class="fa fa-carrot"></i>
+                        <span>Example ...</span>
+                      </div>
+
+                      <div class="nav-link">
+                        <i class="fa fa-chart-bar"></i>
+                        <span>Example ...</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="nav-link">
+                <button
+                  class="social-btn w-100 m-0 text-left navbar-toggler border-0 text-dark"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#socialNavigation"
+                  aria-controls="socialNavigation"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="social-span">Social Media</span>
+                  <i class="social-i fa fa-caret-right"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="socialNavigation">
+                  <ul class="navbar-nav mr-auto text-left px-4">
+                    <li class="nav-item">
+                      <div class="nav-link">
+                        <i class="fa fa-carrot"></i>
+                        <span>Example ...</span>
+                      </div>
+
+                      <div class="nav-link">
+                        <i class="fa fa-chart-bar"></i>
+                        <span>Example ...</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- Settings End -->
+
+        <div class="p-3 my-2 border-bottom border-top w-100 text-left sidemain">
+          <i class="fa fa-link"></i>
+          Resources
+        </div>
+
+        <div class="row navbar-nav p-0 m-0">
+          <div class="col text-left nav-item pl-4">
+            <div class="nav-link">
+              <i class="fa fa-list"></i>
+              <span>Layout & Templates</span>
+            </div>
+            <div class="nav-link">
+              <i class="fa fa-toolbox"></i>
+              <span>Toolbox</span>
+            </div>
+            <div class="nav-link">
+              <i class="fa fa-link"></i>
+              <span>Widget</span>
+            </div>
+            <div class="nav-link">
+              <i class="fa"></i>
+              <span>Reports</span>
+            </div>
+            <div class="nav-link">
+              <i class="fa fa-book"></i>
+              <span>Pages</span>
+            </div>
+            <div class="nav-link">
+              <i class="fa fa-star"></i>
+              <span>Social Media</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+
+      <!-- Main content -->
+      <div class="row main-content px-0 py-1 m-0">
+        <div class="m-0 p-0">
+          <h4 class="sidemain w-100 p-3 border-bottom m-0 bg-white">
+            My Dashboard
+          </h4>
+          <div class="d-flex flex-column">
+            <section class="border-bottom p-3">
+              <div class="label-notif d-flex p-3 border rounded">
+                <span class="inbox-messages">Inbox Messages</span>
+                <span class="mx-auto count-messages">3</span>
+              </div>
+            </section>
+            <section class="border-bottom p-3">
+              <div
+                class="d-flex services bg-primary text-white d-flex rounded shadow-sm text-center"
+              >
+                <div class="flex-grow-1 services-item">
+                  <span><i class="fa fa-plus"></i></span>
+                  <span>Service</span>
+                </div>
+                <div class="flex-grow-1 services-item">
+                  <span><i class="fa fa-cloud"></i></span>
+                  <span>Cloud</span>
+                </div>
+                <div class="flex-grow-1 services-item">
+                  <span><i class="fa fa-cog"></i></span>
+                  <span>Tools</span>
+                </div>
+                <div class="flex-grow-1 services-item">
+                  <span><i class="fa"></i></span>
+                  <span>Help</span>
+                </div>
+              </div>
+            </section>
+            <section class="border-bottom p-3">
+              <div class="border rounded">
+                <h5 class="py-3 px-3 border-bottom progress-title">Reports</h5>
+                <div class="progress-report px-3">
+                  <div class="mb-2">
+                    <span>Success</span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg-success"
+                        style="width: 90%;"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="my-2">
+                    <span>Info</span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
+                        style="width: 40%;"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="my-2">
+                    <span>Warning</span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg-warning"
+                        style="width: 60%;"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="my-2">
+                    <span>Danger</span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg-danger"
+                        style="width: 80%;"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="border-bottom p-3 pb-5">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a
+                    class="nav-item nav-link active"
+                    id="nav-home-tab"
+                    data-toggle="tab"
+                    href="#nav-home"
+                    role="tab"
+                    aria-controls="nav-home"
+                    aria-selected="true"
+                    >Home</a
+                  >
+                  <a
+                    class="nav-item nav-link"
+                    id="nav-messages-tab"
+                    data-toggle="tab"
+                    href="#nav-messages"
+                    role="tab"
+                    aria-controls="nav-messages"
+                    aria-selected="false"
+                    >Messages</a
+                  >
+                  <a
+                    class="nav-item nav-link"
+                    id="nav-settings-tab"
+                    data-toggle="tab"
+                    href="#nav-settings"
+                    role="tab"
+                    aria-controls="nav-settings"
+                    aria-selected="false"
+                    >Settings</a
+                  >
+                </div>
+              </nav>
+              <div class="border tab-content p-3 nav-tab-item">
+                <div
+                  class="tab-pane fade show active"
+                  id="nav-home"
+                  role="tabpanel"
+                  aria-labelledby="nav-home-tab"
+                >
+                  <i class="fa fa-user"></i>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsa enim cumque nostrum quod repellat alias! Itaque porro
+                    nisi ullam voluptas labore ipsam impedit exercitationem
+                    alias neque provident sequi, voluptatum velit?
+                  </p>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-messages"
+                  role="tabpanel"
+                  aria-labelledby="nav-messages-tab"
+                >
+                  <i class="fa fa-envelope"></i>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsa enim cumque nostrum quod repellat alias! Itaque porro
+                    nisi ullam voluptas labore ipsam impedit exercitationem
+                    alias neque provident sequi, voluptatum velit?
+                  </p>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-settings"
+                  role="tabpanel"
+                  aria-labelledby="nav-settings-tab"
+                >
+                  <i class="fa fa-cog"></i>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsa enim cumque nostrum quod repellat alias! Itaque porro
+                    nisi ullam voluptas labore ipsam impedit exercitationem
+                    alias neque provident sequi, voluptatum velit?
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="m-0 p-0">
+          <div
+            class="bg-white d-flex container-right-bar justify-content-around justify-content-lg-end m-0 w-100 border-bottom"
+          >
+            <div class="h4 right-bar py-3 px-2 m-0">
+              <i class="fa fa-cogs"></i>
+            </div>
+            <div class="h4 right-bar py-3 px-2 m-0">
+              <i class="fa fa-comment-alt"></i>
+              3
+            </div>
+            <div class="h4 right-bar py-3 px-2 m-0">
+              <i class="fa fa-user"></i>
+            </div>
+            <div class="h4 right-bar py-3 px-2 m-0">
+              <i class="fa fa-plus-circle mr-1"></i>
+              <span class="text-dark">Add Widget</span>
+            </div>
+          </div>
+          <div class="d-flex flex-column">
+            <section class="p-3">
+              <div class="border rounded">
+                <div class="border-bottom p-3 box-notices">
+                  <p class="h5 m-0">Notices</p>
+                </div>
+                <div class="p-3">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Optio, iure cumque saepe ipsam incidunt omnis quo recusandae
+                    molestias error ratione totam suscipit accusamus repudiandae
+                    adipisci alias veritatis animi. <a href="">Cupiditate</a>,
+                    aperiam?
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section class="p-3">
+              <table class="table table-borderless">
+                <thead class="border-bottom">
+                  <tr>
+                    <th scope="col">Visits</th>
+                    <th scope="col">Roi</th>
+                    <th scope="col">Sources</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-bottom bg-gray">
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr class="border-bottom">
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr class="border-bottom bg-gray">
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                  <tr class="border-bottom">
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                  <tr class="border-bottom bg-gray">
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <section class="p-3">
+              <div class="p-3 bg-gray border rounded-top">
+                <i class="fa fa-screwdriver fa-pull-right"></i>
+                <h5 class="m-0">Post Request</h5>
+              </div>
+              <div class="border border-top-0">
+                <form action="" class="p-3">
+                  <div class="form-group">
+                    <label for="email" aria-required="true">Name</label>
+                    <input
+                      type="email"
+                      id="email"
+                      required
+                      class="form-control"
+                      placeholder="Enter your name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea
+                      class="form-control"
+                      required
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <select class="custom-select bg-gray">
+                      <option selected>Options</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <button class="btn btn-primary text-white">
+                    Post
+                  </button>
+                </form>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="w-100 mt-5 p-3">
+      <div>
+        <h5 class="m-0 text-dark">
+          Kevariable
+        </h5>
+        <ul class="d-flex justify-content-center m-0 p-0">
+          <li>
+            <a target="_blank" href="https://github.com/kevariable"
+              ><i class="mx-2 mt-4 mb-2 fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://t.me/kevariable">
+              <i class="mx-2 mt-4 mb-2 fab fa-telegram"></i
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/kevariable"
+              ><i class="mx-2 mt-4 mb-2 fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="made-width">
+          <p>
+            <i class="fa fa-copyright"></i>
+            2020 Kevin & Team
+          </p>
+          <p>
+            Made with <i class="fa fa-heart text-danger"></i> in Pekanbaru, ID
+          </p>
+          <p>v0.18.0+417e949</p>
+        </div>
+      </div>
+    </footer>
+  <script src="main.js"></script></body>
+</html>
